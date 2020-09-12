@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    ________________________________________________________________
+    // seychelles
+    // Product: https://demo.wickedtemplates.com/seychelles/seychelles.html
+    // Built by https://wickedtemplates.com
+    // The above copyright notice and this permission notice shall be included in all copies.
+    --------------------------------------------------------------
+    // Copyright 2020 Wicked Templates by Michael Andreuzza  Twitter: @Mike_Andreuzza (https://www.wickedtemplates.com)
+    ________________________________________________________________
+    -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <meta name="theme-color" content="#0a165c">
+        <title>FastFowordBio</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        </style>
+    </head>
+    <body>
+	{% include "page/nav.html" %}
+	{% block content%}
+	{% endblock content%}
+	{% include "page/footer.html" %}
+	</body>
+</html>

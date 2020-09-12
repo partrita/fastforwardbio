@@ -1,25 +1,23 @@
-<header>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-	  <a class="navbar-brand" href="#">FastFoward>>Bio</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-		  </li>
-		</ul>
-		<!-- <form class="form-inline mt-2 mt-md-0">
-		  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form> -->
-	  </div>
-	</nav>
-  </header>
+    {% load static %}
+	 <header class="text-gray-700 body-font border-b border-gray-300 ">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a href="{% url 'page:index'%}"
+                    class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img src='{% static "logo_transparent.png" %}' width="50" height="50">
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+				                    <a class="mr-5 hover:text-black font-semibold" href="{% url 'page:about' %}">About us</a>
+                    <a class="mr-5 hover:text-black font-semibold" href="{% url 'page:about' %}">Business</a>
+                    <a class="mr-5 hover:text-black font-semibold" href="{% url 'page:about' %}">Science</a>
+                    <a class="mr-5 hover:text-black font-semibold" href="{% url 'page:about' %}">Products</a>
+                    <a class="mr-5 hover:text-black font-semibold" href="{% url 'page:about' %}">Careers</a>
+                </nav>
+                <a href="#">
+                <button
+                    class="border-2 border-black  text-black block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:bg-white hover:text-indigo-500 transition ease-in-out duration-700 md:mt-0">
+                    See Plans
+                </button>
+                </a>
+            </div>
+        </header>
+        <!---End Global Header-->
