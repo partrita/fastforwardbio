@@ -1,11 +1,53 @@
 {% extends "page/base.html" %} {% load static %} {% block content %}
-<section class="">
+<section class="text-black">
   <div
-    class="container mx-auto flex px-10 py-8 items-center justify-center flex-col"
+    class="container mx-auto flex px-5 pt-24 items-center justify-center flex-col"
   >
-    <h1 class="text-gray-700 text-6xl title-font font-black">
-      Wow, such a empty!
-    </h1>
+    <div class="text-center lg:w-2/3 w-full">
+      <h1
+        class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black font-mono"
+      >
+        Biosimilar
+      </h1>
+      <p class="leading-relaxed mb-8 font-normal">
+        환자들에게 합리적 비용의 고품질 바이오의약품 치료기회를 제공합니다.
+      </p>
+      <div class="flex justify-center">
+        <button
+          class="border-2 border-white text-white block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:bg-gray-900 hover:text-pink-500 transition ease-in-out duration-700 mb-20"
+        >
+          Show me
+        </button>
+      </div>
+    </div>
   </div>
 </section>
+<style>
+  .bg-dots{
+    background-image: url(https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5dea7a12bb83ab1f13040de5_cx-dots.svg);
+    background-repeat: no-repeat
+  }
+</style>
+
+<div class="m-auto max-w-6xl p-12">
+   <div class="flex flex-col md:flex-row">
+      <div class="md:w-1/2 max-w-md flex flex-col justify-center">
+         <div class="md:text-5xl text-2xl uppercase font-black">
+         퍼스트 무버를 넘어 게임 체인저로</div>
+         <div class="text-xl mt-4">세계 최초로 항체 바이오시밀러인 시마를 글로벌 시장에 선보이며 합리적인 비용으로 더 많은 환자에게 치료 혜택을 제공함으로써 사회경제적 혁신을 이루었습니다. </div>
+         <div class="my-5 h-16">
+            <div class="shadow-md font-medium py-2 px-4 text-yellow-100
+               cursor-pointer bg-red-400 hover:bg-red-500 rounded text-lg text-center w-48">자세히 알아보기</div>
+         </div>
+      </div>
+      <div class="flex md:justify-end w-full md:w-1/2 -mt-5">
+         <div class="bg-dots">
+            <div class="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
+               <img alt="card img" class="rounded-t" src="https://s.spielwarenmesse.de/fileadmin/data_archive/Relaunch_Spielwarenmesse/magazine/header/20190618_Header_Memes.jpg"> 
+               <div class="text-2xl p-10 bg-white"><img alt="quote" class="float-left mr-1" src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg"> 누적 처방 기록과 장기 임상 결과를 통해 효능과 안전성을 입증한 램시마는 전세계 의약품 규제 기관과 환자의 신뢰를 받고있는 최초의 항체 바이오시밀러입니다. </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 {% endblock %}
