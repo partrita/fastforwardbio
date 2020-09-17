@@ -1,8 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Post
 
 def index(request):
-    context = {}
+    posts = Post.objects.all()
+    context = {
+        'posts': posts
+        }
     return render(request, 'page/index.html', context)
+
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'page/post_detail.html', {'post': post})
 
 def about(request):
     return render(request, 'page/about.html')
